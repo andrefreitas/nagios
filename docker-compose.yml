@@ -1,0 +1,8 @@
+dev:
+  build: .
+  ports:
+    - "8003:80"
+  volumes:
+    - ./hosts:/usr/local/nagios/etc/hosts
+    - ./objects:/usr/local/nagios/etc/objects
+    - ./nagios.cfg:/usr/local/nagios/etc/nagios.cfg
